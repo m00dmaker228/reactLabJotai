@@ -1,0 +1,36 @@
+.detailContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.poster {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.summary {
+    margin: 20px 0;
+}
+
+.genres {
+    font-size: 1.5rem;
+}
+
+.genresList {
+    list-style-type: disc;
+    padding-left: 20px;
+}
