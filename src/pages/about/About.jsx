@@ -4,16 +4,28 @@ import styles from "./About.module.css";
 export const About = () => {
     return (
         <div className={styles.aboutContainer}>
-            <h1 className={styles.aboutTitle}>About Us</h1>
+            <h1 className={styles.aboutTitle}>Про нас</h1>
             <p className={styles.aboutText}>
-                Welcome to our movie app! This application allows users to explore a wide range of movies,
-                view detailed information, and discover new favorites. Our mission is to create a
-                user-friendly and enjoyable experience for all movie enthusiasts.
+                Ласкаво просимо до нашого застосунку для перегляду фільмів! Цей застосунок дозволяє користувачам 
+                досліджувати широкий вибір фільмів, переглядати детальну інформацію про них та відкривати нові 
+                улюблені стрічки. Наша місія — створити зручний та приємний досвід для всіх любителів кіно.
             </p>
             <p className={styles.aboutText}>
-                Our team is passionate about movies and technology, and we're constantly working on improving
-                the app to bring you the latest features and enhancements. We hope you enjoy using it as
-                much as we enjoyed building it!
+                Наша команда захоплена фільмами та технологіями, і ми постійно працюємо над покращенням 
+                застосунку, щоб приносити вам найновіші функції та вдосконалення. Сподіваємось, ви отримаєте 
+                задоволення від використання нашого застосунку так само, як ми отримували задоволення від його 
+                створення!
+            </p>
+            <h2 className={styles.featuresTitle}>Основні функції</h2>
+            <ul className={styles.featuresList}>
+                <li>Широкий вибір фільмів з можливістю перегляду деталей</li>
+                <li>Зручна система пагінації для легкого навігації</li>
+                <li>Сучасний та інтуїтивно зрозумілий інтерфейс</li>
+                <li>Можливість фільтрації та сортування фільмів</li>
+            </ul>
+            <p className={styles.aboutText}>
+                Ми завжди відкриті до ваших відгуків і пропозицій! Якщо у вас є питання або ідеї, 
+                не соромтеся зв’язатися з нами.
             </p>
         </div>
     );
