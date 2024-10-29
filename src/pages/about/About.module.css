@@ -1,0 +1,27 @@
+.aboutContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.aboutText {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.featuresTitle {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.featuresList {
+    list-style-type: disc;
+    padding-left: 20px;
+}
