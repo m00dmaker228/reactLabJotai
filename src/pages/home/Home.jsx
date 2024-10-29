@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useAtom } from 'jotai';
 import styles from './Home.module.css';
 import { Movie } from '../../components/movie/Movie';
-import { isLoadingAtom, moviesAtom } from '../../state/atoms';
-import { fetchMovies } from '../../components/movie/api/movieApi';
+import { isLoadingAtom } from '../../state/atoms';
 
-export const Home = () => {
-    const [movies, setMovies] = useAtom(moviesAtom);
-    const [isLoading, setIsLoading] = useAtom(isLoadingAtom);
-
-    useEffect(() => {
-        fetchMovies(setMovies, setIsLoading);
-    }, []);
-
+export const Home = ({movies}) => {
+    const [isLoading] = useAtom(isLoadingAtom);
     return (
         <section className="movie-list container">
             {isLoading ? (
@@ -21,7 +14,7 @@ export const Home = () => {
                 </div>
             ) : (
                 <div className={styles.movieGrid}>
-                    {movies.map((movie) => (
+                      {movies.slice(0, 10).map((movie) => ( 
                         <div key={movie.id}>
                             <Movie
                                 id={movie.id}
