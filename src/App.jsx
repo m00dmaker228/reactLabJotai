@@ -1,21 +1,22 @@
 import React from 'react';
-import Container from '@mui/material/Container';
+import { Route, Routes } from "react-router-dom";
 import {Navbar} from './components/Navbar';
 import {Footer} from './components/Footer';
-import Typography from '@mui/material/Typography';
+import { Home } from './pages/Home';
+import { About } from './pages/about/About';
+
 
 function App() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-    <Navbar />
-    <Container component="main" sx={{ flex: 1 }}>
-      <Typography variant="h4" gutterBottom>
-        Welcome to the Movie App!
-      </Typography>
-    </Container>
-    <Footer/>
-  </div>
-  )
-}
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+   <Navbar />
+   <Routes>
+     <Route path="/" element={<Home />} />
+     <Route path="/about" element={<About />} />
+   </Routes>
+   <Footer />
+   </div>
 
+  )
+}  
 export default App

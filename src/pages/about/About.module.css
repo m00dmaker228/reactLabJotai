@@ -1,0 +1,19 @@
+.aboutContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutTitle {
+    font-size: 2em;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.aboutText {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
